@@ -75,6 +75,7 @@ const Portfolio = () => {
                 location: 'Kempton Park, Gauteng',
                 type: 'Industrial',
                 description: 'Large-scale warehouse construction with specialized loading facilities.',
+                image: warehouseImg
                 
               }
             ].map((project, index) => (
