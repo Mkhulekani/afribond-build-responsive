@@ -65,7 +65,8 @@ const Portfolio = () => {
                 title: 'Luxury Townhouse Development',
                 location: 'Midrand, Gauteng',
                 type: 'Residential',
-                description: 'Development of 12 luxury townhouses with premium finishes and landscaping.'
+                description: 'Development of 12 luxury townhouses with premium finishes and landscaping.',
+                image: '/lovable-uploads/e5b5635b-1f7f-4e3d-9256-727fac4e9f72.png'
               },
               {
                 title: 'Industrial Warehouse',
