@@ -1,5 +1,7 @@
 import React from 'react';
 import { Star } from 'lucide-react';
+import warehouseImg from "../assets/warehouse-img.jpg";
+
 
 const Portfolio = () => {
   return (
@@ -72,7 +74,8 @@ const Portfolio = () => {
                 title: 'Industrial Warehouse',
                 location: 'Kempton Park, Gauteng',
                 type: 'Industrial',
-                description: 'Large-scale warehouse construction with specialized loading facilities.'
+                description: 'Large-scale warehouse construction with specialized loading facilities.',
+                
               }
             ].map((project, index) => (
               <div key={index} className="bg-gray-50 rounded-xl p-6 hover:shadow-medium transition-all duration-300 hover:-translate-y-1 group">

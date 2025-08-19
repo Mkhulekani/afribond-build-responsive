@@ -14,6 +14,7 @@ const Services = () => {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-6 sm:gap-8">
+          
           {[
             {
               icon: HomeIcon,
