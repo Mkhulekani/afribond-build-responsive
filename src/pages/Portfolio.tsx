@@ -34,22 +34,25 @@ const Portfolio = () => {
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {[
               {
-                title: 'Modern Family Home',
-                location: 'Centurion, Gauteng',
+                title: 'Residential Paving Project',
+                location: 'Gauteng',
                 type: 'Residential',
-                description: 'Complete renovation and extension of a 4-bedroom family home with modern finishes.'
+                description: 'Professional paving installation with herringbone pattern using high-quality concrete blocks.',
+                image: '/lovable-uploads/85cc21c9-a08a-4e6d-b772-b1a50f9956c7.png'
               },
               {
-                title: 'Community Health Clinic',
-                location: 'Mamelodi, Pretoria',
-                type: 'Community',
-                description: 'New construction of a community health facility serving 500+ families.'
+                title: 'Backyard Paving Installation',
+                location: 'Gauteng',
+                type: 'Residential',
+                description: 'Complete backyard transformation with precision paving and professional finishing.',
+                image: '/lovable-uploads/339ae4bf-79ef-49e3-83a4-31951aabb875.png'
               },
               {
-                title: 'Commercial Office Complex',
-                location: 'Sandton, Johannesburg',
-                type: 'Commercial',
-                description: 'Multi-story office building with modern amenities and sustainable features.'
+                title: 'Precision Paving Work',
+                location: 'Gauteng',
+                type: 'Residential',
+                description: 'Meticulous paving installation with attention to detail and professional craftsmanship.',
+                image: '/lovable-uploads/ad56d07c-adc3-4934-96ac-acd067dde812.png'
               },
               {
                 title: 'School Renovation Project',
@@ -71,8 +74,16 @@ const Portfolio = () => {
               }
             ].map((project, index) => (
               <div key={index} className="bg-gray-50 rounded-xl p-6 hover:shadow-medium transition-all duration-300 hover:-translate-y-1 group">
-                <div className="h-48 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-lg mb-4 flex items-center justify-center">
-                  <span className="text-gray-500 font-medium">Project Image</span>
+                <div className="h-48 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-lg mb-4 flex items-center justify-center overflow-hidden">
+                  {project.image ? (
+                    <img 
+                      src={project.image} 
+                      alt={project.title}
+                      className="w-full h-full object-cover rounded-lg"
+                    />
+                  ) : (
+                    <span className="text-gray-500 font-medium">Project Image</span>
+                  )}
                 </div>
                 <span className={`inline-block px-3 py-1 rounded-full text-xs font-medium mb-3 ${
                   project.type === 'Residential' ? 'bg-blue-100 text-blue-800' :
