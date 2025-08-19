@@ -58,7 +58,8 @@ const Portfolio = () => {
                 title: 'School Renovation Project',
                 location: 'Atteridgeville, Pretoria',
                 type: 'Community',
-                description: 'Complete renovation of primary school classrooms and facilities.'
+                description: 'Complete renovation of primary school classrooms and facilities.',
+                image: '/lovable-uploads/fb1b76cc-d5ff-411b-93c2-4860b75e52c2.png'
               },
               {
                 title: 'Luxury Townhouse Development',
